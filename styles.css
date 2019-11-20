@@ -1,32 +1,290 @@
-h1, h2, h3, h4, h5 {
-	text-align: center;
+@charset utf-8;
+/* Styles for Women! */
+@charset utf-8;
+/* Styles for Jane Eyre */
+
+/* Body */
+body {
+    display: block;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    line-height: 1.5em;
+    margin: 2em auto 3em;
+    padding: 0em 1.5em 0em;
 }
+
+/* Basic heading styles */
+h1, h2, h3, h4 {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
 h1 {
-	font-variant: small-caps;
+    font-size: 2em;
+    font-variant: small-caps;
+    margin: .67em 0em;
 }
-h2.subtitle-small {
-	font-size: .9em;
-	margin-bottom: 0em;
-	margin-top: 0em;
+h2 {
+    font-size: 1.5em;
+    margin: .83em 0em;
+}
+h3 {
+    font-size: 1.17em;
+    font-style: italic;
+    font-weight: normal;
+    margin: 1em 0em 2em;
+}
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+.sub-heading {
+    font-style: italic;
+    font-size: 1.17em;
+    font-weight: inherit;
+    margin: 0em auto 1em;
 }
 
-/* == General Paragraph Styles == */
+/* ==Start Page (Cover) & Title Page== */
+img.cover-image {
+  margin: 0em auto 0em;
+}
+.main-title {
+  font-size: 3.5em;
+  line-height: 1em;
+}
+.subtitle {
+  font-size: 2em;
+  line-height: 1em;
+  margin: -.5em auto 1.5em;
+}
+.author {
+  font-size: 2em;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0em auto 1.5em;
+}
 
+.imprint {
+  display: block;
+  margin: 4em auto .5em;
+}
+.banner {
+  border-top: 0.25em double;
+  border-bottom: 0.25em double;
+  font-size: 0.75em;
+  text-align: center;
+  text-indent: 0;
+}
+/* ==About the Text Page== */
+  .about-block {
+    background-color: white;
+    padding: 1.5em;
+    margin: 3em;    
+    }
+  .about-block > hr {
+    max-width: 25%;
+    margin: 1.5em auto;
+  }
+  p.motto {
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 1.5em;
+    text-align: center;
+    text-indent: 0;
+  }
+  img.editor-pic {
+    float: left;
+    padding-right: 1em;
+    max-width: 30%;
+  }
+
+/* ==General paragraph styles== */
 p {
-	text-indent: 1.5em;
-	margin: 0em 1.5em 0em;
+    font-size: 1em;
+    text-indent: 2em;
+    margin: 0em auto 1em;
 }
 p.first {
-	text-indent: 0em;
-}
-
-br.small-break {
-	margin: 1em;
+    text-indent: 0em;
 }
 
 /* Block Quotations */
 div.blockquote {
-	font-size: 1em;
-	margin: 1.5em auto 1.5em;
-	max-width: 85%;
+    font-size: 1em;
+    margin: 1.5em auto 0;
+    max-width: 85%;
+}
+
+
+
+/* ==General Divs== */
+div.section, div.chapter, div.article {
+    display: block;
+    margin-bottom: 2em
+}
+
+/* ==Poetry==
+Wrap poems in <div class="poem"> tags and <div class="stanza"> tags when appropriate.
+Treat lines as <p> to allow for hanging indents when text is re-sized.
+*/
+div.poem {
+    display: block;
+    margin: 0 auto 1.5em;
+
+}
+.poem h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+}
+.poem h2 {
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+}
+div.stanza {
+    margin: 0 auto 1.5em;
+}
+div.stanza > p {
+    display: block;
+    max-width: 60%
+    font-style: italic;
+    margin: 0em 20% 0em 20%;
+    text-align: left;
+    text-indent: -1em;
+    padding-left: 1em;
+    white-space: pre-wrap;
+}
+div.stanza-italics > p {
+    display: block;
+    max-width: 60%
+    font-style: italic;
+    margin: 0em 20% 0em 20%;
+    text-align: left;
+    text-indent: -1em;
+    padding-left: 1em;
+    white-space: pre-wrap;
+}
+div.stanza-italics em {
+    font-style: normal;
+    text-indent: -1em;
+}
+
+/* Letters */
+div.letter {
+    padding-bottom: 2em;
+}
+.letter > h1 {
+    font-variant: small-caps;
+    margin-bottom: 1em; 
+}
+.salutation {
+    font-style: italic;
+    text-indent: 1em;
+    margin-bottom: 1em;
+}
+.signature {
+    font-style: italic;
+    margin-bottom: 1em;
+    text-align: right;
+}
+.signature em, .salutation em {
+    font-variant: small-caps;
+}
+div.postscript {
+    margin-left: 3em;
+}
+div.postscript > p {
+    text-indent: -1em;
+}
+
+/* Footnotes & Citations*/
+mark, mark.reference {
+    background-color: transparent;
+    font-size: smaller;
+    vertical-align: super;
+}
+div.footnotes {
+    border-top: 1px solid black;
+    margin: 1.5em 2em 0em 0em;
+    padding-top: 1.5em;
+}
+p.note {
+    margin-bottom: 1.5em;
+    padding-left: 3em;
+    text-indent: 0em;
+}
+p.cite {
+    padding-bottom: 1em;
+    padding-left: 2em;
+    text-indent: -2em;
+}
+
+/* 
+Breaks 
+The <br/> tag creates a line break and should be used inside another element, such as a <p>. Poetry is the most common use of the <br/> tag.
+Use <div class="small-break" /> to indicate a space between elements.   
+*/
+div.small-break {
+    padding-top: 1em;
+}
+
+/* 
+== Columns ==
+.row:after clear floats the columns;
+ */
+.column {
+    float: left;
+    width: 50%;
+}
+.col-left {
+    float: left;
+    width: 48%;
+}
+.col-right { 
+    float: right;
+    width: 48%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* 
+In-line styles:
+For acessibility, <em> (emphasis) and <strong> are preferred to <i> and <b> because they are descritive of the styling's purpose.
+When styling is not particularly meaningful, such as italicizing the titles of books, the <i> and <b> tag are appropriate. 
+This section also includes styling for nested changes. For example, in an italicized heading, using the <em> tag will produce Small Caps. This simplifies the semantic markup.   
+*/
+span.first-word {
+    font-variant: small-caps;
+}
+.centered {
+    text-align: center;
+}
+b, strong, span.bold {
+    font-weight: 700;
+}
+i, em, .italics {
+    font-style: italic;
+    font-weight: 400;
+}
+.small-caps {
+    font-variant: small-caps;
+}
+strong > em, h3.subtitle > strong {
+    font-variant: small-caps;
+}
+h2.subtitle > em {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+strong.clear, em.clear {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
 }
