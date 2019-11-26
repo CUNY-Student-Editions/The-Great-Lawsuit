@@ -2,13 +2,38 @@
 <ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
   <head>
     <meta content="3da58bbc-9158-4e9f-b7ab-9aa5f556c92d" name="dtb:uid"/>
-    <meta content="1" name="dtb:depth"/>
-    <meta content="calibre (3.47.1)" name="dtb:generator"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="calibre (4.3.0)" name="dtb:generator"/>
     <meta content="0" name="dtb:totalPageCount"/>
     <meta content="0" name="dtb:maxPageNumber"/>
   </head>
   <docTitle>
-    <text>Women!</text>
+    <text>The Great Lawsuit</text>
   </docTitle>
-  <navMap/>
+  <navMap>
+    <navPoint id="num_1" playOrder="1">
+      <navLabel>
+        <text>Title page</text>
+      </navLabel>
+      <content src="001-cse-title-page.xhtml#toc_4"/>
+    </navPoint>
+    <navPoint id="num_2" playOrder="2">
+      <navLabel>
+        <text>About this edition</text>
+      </navLabel>
+      <content src="002-cse-about.xhtml#toc_4"/>
+    </navPoint>
+    <navPoint id="num_3" playOrder="3">
+      <navLabel>
+        <text>Introduction</text>
+      </navLabel>
+      <content src="003-cse-introduction.xhtml"/>
+    </navPoint>
+    <navPoint id="num_4" playOrder="4">
+      <navLabel>
+        <text>The Great Lawsuit</text>
+      </navLabel>
+      <content src="004-the-great-lawsuit.xhtml"/>
+    </navPoint>
+  </navMap>
 </ncx>

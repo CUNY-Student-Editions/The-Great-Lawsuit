@@ -69,6 +69,7 @@ img.cover-image {
 .imprint {
   display: block;
   margin: 4em auto .5em;
+  width: 8em;
 }
 .banner {
   border-top: 0.25em double;
@@ -78,10 +79,25 @@ img.cover-image {
   text-indent: 0;
 }
 /* ==About the Text Page== */
+  .about-page {
+    display: block;
+    background-color:Gainsboro;
+    background-image:
+    radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+      radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+      radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+      radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+      radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+    background-size: 4em 2em;
+    margin: -2em;
+    }
   .about-block {
     background-color: white;
-    padding: 1.5em;
-    margin: 3em;    
+    border-style: double;
+    border-size: .5em;
+    margin: 0 auto 3em;
+    padding: 2.5em;
+    width: 60%;  
     }
   .about-block > hr {
     max-width: 25%;
@@ -95,9 +111,10 @@ img.cover-image {
     text-indent: 0;
   }
   img.editor-pic {
+    display: block;
     float: left;
     padding-right: 1em;
-    max-width: 30%;
+    width: 8em;
   }
 
 /* ==General paragraph styles== */
@@ -106,18 +123,19 @@ p {
     text-indent: 2em;
     margin: 0em auto 1em;
 }
-p.first {
+p.no-indent {
     text-indent: 0em;
 }
 
 /* Block Quotations */
-div.blockquote {
+div.block-quote {
     font-size: 1em;
-    margin: 1.5em auto 0;
+    margin: 1em 4em 0em 4em;
     max-width: 85%;
 }
-
-
+.block-quote > p {
+    text-indent: 0em;
+}
 
 /* ==General Divs== */
 div.section, div.chapter, div.article {
@@ -131,7 +149,7 @@ Treat lines as <p> to allow for hanging indents when text is re-sized.
 */
 div.poem {
     display: block;
-    margin: 0 auto 1.5em;
+    margin: 1em auto;
 
 }
 .poem h1 {
@@ -144,14 +162,9 @@ div.poem {
     font-weight: 700;
     text-align: center;
 }
-div.stanza {
-    margin: 0 auto 1.5em;
-}
 div.stanza > p {
     display: block;
-    max-width: 60%
-    font-style: italic;
-    margin: 0em 20% 0em 20%;
+    margin: 0em 4em 0em 4em;
     text-align: left;
     text-indent: -1em;
     padding-left: 1em;
@@ -200,26 +213,31 @@ div.postscript > p {
     text-indent: -1em;
 }
 
-/* Footnotes & Citations*/
+/* Footnotes & Citations
+Include footnotes in a <section class="doc-endnotes" epub:type="doc-endnotes"> tag. Order notes in a list. Each <li> item needs to include a id=@@ atribute and end with this return link: &emsp; <a href="#ref-@@">Back</a>. linked phrase preferred over linked superscript character. Include in reference <a> tag: id="ref-##" href="note-##". At the page bottom, include the <div class="
+*/
+[role="doc-endnotes"], section.endnotes {
+    border-top: 1px solid black;
+    margin: 1.5em 2em 0em 0em;
+    padding-top: 1.5em;
+    }
 mark, mark.reference {
     background-color: transparent;
     font-size: smaller;
     vertical-align: super;
-}
-div.footnotes {
-    border-top: 1px solid black;
-    margin: 1.5em 2em 0em 0em;
-    padding-top: 1.5em;
-}
-p.note {
-    margin-bottom: 1.5em;
-    padding-left: 3em;
-    text-indent: 0em;
-}
-p.cite {
+    }
+.footnotes > p {
+    margin-bottom: 1em;
+    
+    }
+.cite, .hanging-indent {
     padding-bottom: 1em;
     padding-left: 2em;
     text-indent: -2em;
+    }
+li[role="doc-endnote"]  {
+    text-indent: 0em;
+    margin-bottom: 1.5em;
 }
 
 /* 
