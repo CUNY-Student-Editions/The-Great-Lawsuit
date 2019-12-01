@@ -1,5 +1,4 @@
-/* Styles for Women! */
-/* Styles for Jane Eyre */
+/* Styles for The Great Lawsuit Edited by Christina Katopodis - This style sheet is free to use from CUNY Student Editions */
 /* Body */
 body {
   display: block;
@@ -51,23 +50,23 @@ img.cover-image {
 .subtitle {
   font-size: 2em;
   line-height: 1em;
-  margin: -0.5em auto 1.5em;
+  margin: -0.5em auto 1em;
 }
 .author {
   font-size: 2em;
   font-weight: 700;
   font-style: italic;
-  margin: 0 auto 1.5em;
+  margin: 0 auto 1em;
 }
 .imprint {
   display: block;
-  margin: 4em auto 0.5em;
+  margin: 1em auto 0.5em;
   width: 8em;
 }
 .banner {
-  border-top: 0.25em double;
-  border-bottom: 0.25em double;
-  font-size: 0.75em;
+  border-top: 0.2em double;
+  border-bottom: 0.2em double;
+  font-size: 1em;
   text-align: center;
   text-indent: 0;
 }
@@ -92,7 +91,7 @@ img.cover-image {
   margin: 1.5em auto;
 }
 p.motto {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-style: italic;
   line-height: 1.5em;
   text-align: center;
@@ -220,10 +219,17 @@ li[role="doc-endnote"] {
 /* 
 Breaks 
 The <br/> tag creates a line break and should be used inside another element, such as a <p>. Poetry is the most common use of the <br/> tag.
-Use <div class="small-break" /> to indicate a space between elements.   
+Use <div class="small-break" /> to indicate DECORATIVE space between elements. Use <hr class="transition"> when the space indicates a context change. Use <p class="page-break"> to control breaks on certain ereaders.   
 */
 div.small-break {
   padding-top: 1em;
+}
+hr.transition {
+  margin: 0em 1em;
+  height: 0em;  
+}
+.page-break {
+  page-break-before: always;
 }
 /* 
 == Columns ==
