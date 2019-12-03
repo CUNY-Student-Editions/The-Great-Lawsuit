@@ -130,7 +130,7 @@ div.section, div.chapter, div.article {
 Wrap poems in <div class="poem"> tags and <div class="stanza"> tags when appropriate.
 Treat lines as <p> to allow for hanging indents when text is re-sized.
 */
-div.poem {
+div.poem, div.epigraph {
   display: block;
   margin: 1em auto;
 }
