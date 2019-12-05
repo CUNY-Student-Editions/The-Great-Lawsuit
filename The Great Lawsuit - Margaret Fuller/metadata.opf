@@ -2,16 +2,16 @@
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
     <dc:title>The Great Lawsuit</dc:title>
-    <dc:creator opf:role="aut" opf:file-as="Fuller">Fuller</dc:creator>
+    <dc:creator opf:role="aut" opf:file-as="Fuller, Margaret">Margaret Fuller</dc:creator>
     <dc:identifier opf:scheme="uuid" id="uuid_id">3da58bbc-9158-4e9f-b7ab-9aa5f556c92d</dc:identifier>
     <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (3.47.1) [https://calibre-ebook.com]</dc:contributor>
     <dc:date>2019-11-21T05:00:00+00:00</dc:date>
     <dc:publisher>CUNY Student Editions</dc:publisher>
     <dc:language>en</dc:language>
     <dc:identifier opf:scheme="calibre">fcf0bc3b-7b2d-479e-b348-f84ba66c79a2</dc:identifier>
-    <meta content="{&quot;Fuller&quot;: &quot;&quot;}" name="calibre:author_link_map"/>
+    <meta content="{&quot;Margaret Fuller&quot;: &quot;&quot;}" name="calibre:author_link_map"/>
     <meta content="2019" name="calibre:series"/>
-    <meta content="5.0" name="calibre:series_index"/>
+    <meta content="1.0" name="calibre:series_index"/>
     <meta name="calibre:title_sort" content="Great Lawsuit, The"/>
     <meta name="cover" content="cover"/>
   </metadata>

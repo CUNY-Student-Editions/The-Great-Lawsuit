@@ -207,7 +207,7 @@ mark, mark.reference {
 .footnotes > p {
   margin-bottom: 1em;
 }
-.cite, .hanging-indent {
+.work-cited, .hanging-indent {
   padding-bottom: 1em;
   padding-left: 2em;
   text-indent: -2em;
@@ -215,6 +215,9 @@ mark, mark.reference {
 li[role="doc-endnote"] {
   text-indent: 0;
   margin-bottom: 1.5em;
+}
+cite {
+  font-style: normal;
 }
 /* 
 Breaks 
